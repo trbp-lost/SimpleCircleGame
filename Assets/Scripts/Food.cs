@@ -10,9 +10,6 @@ public class Food : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         FoodSpawn spawn = GameObject.Find("FoodSpawn").GetComponent<FoodSpawn>();
 
-        if (currentScene.name == "no8" || currentScene.name == "no7")
-            Debug.Log(currentScene.name);
-        else return;
         Score score = GameObject.Find("Canvas/Panel/TextScore").GetComponent<Score>();
 
         if (spawn != null && collision.collider.tag == "Player")

@@ -31,11 +31,11 @@ public class FoodSpawn : MonoBehaviour
     {
         for (int i = 0; i < spawnItems; i++)
         {
-            Vector3 randomPosition = new Vector3(Random.Range(-7, 7), Random.Range(-4, 4), 0);
+            Vector3 randomPosition = new Vector3(Random.Range(-5.5f, 5.5f), Random.Range(-3f, 3f), 0);
 
             while (Vector3.Distance(randomPosition, player.transform.position) < 1f)
             {
-                randomPosition = new Vector3(Random.Range(-7, 7), Random.Range(-4, 4), 0);
+                randomPosition = new Vector3(Random.Range(-5.5f, 5.5f), Random.Range(-3f, 3f), 0);
             }
 
 
