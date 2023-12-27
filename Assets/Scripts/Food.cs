@@ -14,6 +14,7 @@ public class Food : MonoBehaviour
 
         if (spawn != null && collision.collider.tag == "Player")
         {
+            if (currentScene.name != "no8" && currentScene.name != "no7") return;
             Destroy(gameObject);
             score.AddScore(1);
             if (currentScene.name != "no8") return;
