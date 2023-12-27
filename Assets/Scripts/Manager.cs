@@ -18,4 +18,9 @@ public class Manager : MonoBehaviour
     {
         Application.OpenURL("https://www.linkedin.com/in/tengku-revino-buana-putra/");
     }
+
+    public void QuitGameApplication()
+    {
+        Application.Quit();
+    }
 }
